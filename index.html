@@ -1,0 +1,58 @@
+<!DOCTYPE html> <html><head>
+        <title>Scene Project</title>
+    <style>.racer{
+    width: 20%;
+    transition: .2s;
+     padding-top: 380px;
+}    
+    
+.racer2{
+    width:20%;
+    transition: .1s;
+}    
+    
+body{
+    background-image:url('https://vignette.wikia.nocookie.net/spongebob/images/3/38/Bumper_to_Bumper_168a.png/revision/latest?cb=20181221003614');
+   
+    }</style></head>
+    <body>
+    <div class="image-left">
+    <img class="racer" src="https://vignette.wikia.nocookie.net/spongebob/images/7/78/Patty_Wagon_Transparent.png/revision/latest?cb=20181031133623">
+    </div>
+    <button class="btn">Begin Race</button>
+    <div class="image-left2">
+    <img class="racer2" src="https://familyguytips.files.wordpress.com/2017/01/joe_toy_car_anim.png">
+    </div>
+    
+        
+
+        <p id="target"></p>
+    
+
+<script>
+/*__POPCODESTART__*/
+document.querySelector(".btn").addEventListener('click', move);
+
+function move(){
+    setInterval(faster, 2);
+    }
+    var a = 0;
+function faster(){
+    a++;
+    document.querySelector(".image-left").style = "transform: translateX(" +a+"px);";
+    setInterval(drift, 3000);
+    
+    }
+function drift(){
+    document.querySelector(".racer").style = "transform: rotateY(180deg) ;";
+    }
+    
+document.querySelector(".btn").addEventListener('click', moveT);    
+function moveT(){
+    setInterval(fasterT, 5);
+    }
+    var e = 0;
+function fasterT(){
+    e++;
+    document.querySelector(".image-left2").style = "transform: translateX(" +e+"px);";
+}</script></body></html>
