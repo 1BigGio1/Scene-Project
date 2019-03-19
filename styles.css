@@ -1,0 +1,15 @@
+.racer{
+    width: 20%;
+    transition: .2s;
+     padding-top: 380px;
+}    
+    
+.racer2{
+    width:20%;
+    transition: .1s;
+}    
+    
+body{
+    background-image:url('https://vignette.wikia.nocookie.net/spongebob/images/3/38/Bumper_to_Bumper_168a.png/revision/latest?cb=20181221003614');
+   
+    }
